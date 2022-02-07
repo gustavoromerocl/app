@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Route::view('/', 'index', ['name' => $nombre])->name('home'); //Se puede usar para paginas que no requieran programar una lógica compleja como el home o politicas de privacidad
-
+Route::get('/', 'App\Http\Controllers\VotesController@index');
 //Se debe especificar la ruta completa del controlador
-Route::resource('votes', 'App\Http\Controllers\VotesController');
+Route::resource('voters', 'App\Http\Controllers\VotesController');
