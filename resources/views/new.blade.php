@@ -1,6 +1,6 @@
 @extends('layout')
 
-{{-- Como segundo paramtro recibe el valor por default--}}
+{{-- Como segundo parametro recibe el valor por default--}}
 @section('title', 'Nuevo')
 
 @section('content')
