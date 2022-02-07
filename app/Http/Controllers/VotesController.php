@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Models\Voter;
 
 class VotesController extends Controller
 {
@@ -13,10 +14,7 @@ class VotesController extends Controller
      */
     public function index()
     {
-        $votes = [
-            ['comuna' => 'Maipú'],
-            ['comuna' => 'Pudahuel']
-        ];
+        $votes = Voter::all();
 
         return view('index', compact('votes'));
     }

@@ -9,7 +9,7 @@
 <ul>
   <h5>Total de votos emitidos: {{ count($votes) }}</h5>
   @foreach($votes as $votesItem)
-    <li>{{ $votesItem['comuna'] }}</li>
+    <li>{{ $votesItem['name'] }}</li>
   @endforeach
 </ul>
 @endsection
